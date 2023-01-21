@@ -120,10 +120,27 @@ image2Div.appendChild(image2Header);
 
 // Image2
 const image2 = document.createElement('img');
-image2.setAttribute('src', 'yProject/assets/undraw_building_websites_light.svg');
+image2.setAttribute('src', '/myProject/assets/undraw_building_websites_light.svg');
 image2.setAttribute('width', '300px');
 image2.setAttribute('height', '300px');
-image2Div .appendChild(image2)
+image2Div .appendChild(image2);
+
+// Image3Div
+const image3Div = document.createElement('div');
+image3Div.setAttribute('class', 'image__container')
+aboutDiv.appendChild(image3Div);
+
+// Add h2
+const image3Header = document.createElement('h2');
+image3Header.innerHTML = `Static Websites`;
+image3Div.appendChild(image3Header);
+
+// Image3
+const image3 = document.createElement('img');
+image3.setAttribute('src', '/myProject/assets/undraw_static_website_re_light.svg');
+image3.setAttribute('width', '300px');
+image3.setAttribute('height', '300px');
+image3Div.appendChild(image3);
 
 
 
