@@ -5,14 +5,30 @@ themeContainer.setAttribute('class', 'theme_switch_container');
 document.body.append(themeContainer);
 
 // Toggle Icon
-const toggle = document.createElement('span');
-toggle.setAttribute('class', 'toggle__icon');
+const toggle = document.createElement('input');
+toggle.setAttribute('class', 'checkbox');
+toggle.setAttribute('id', 'checkbox');
+toggle.setAttribute('type', 'checkbox');
 themeContainer.appendChild(toggle);
 
-const icon = document.createElement('i');
-icon.setAttribute('class', 'fa-solid fa-toggle-on');
-icon.setAttribute('aria-hidden', 'true');
-toggle.appendChild(icon);
+const label = document.createElement('label')
+label.setAttribute('for', 'checkbox');
+label.setAttribute('class', 'label');
+themeContainer.appendChild(label);
+
+const moonIcon = document.createElement('i');
+moonIcon.setAttribute('class', 'fa-solid fa-moon');
+moonIcon.setAttribute('aria-hidden', 'true');
+label.appendChild(moonIcon);
+
+const sunIcon = document.createElement('i');
+sunIcon.setAttribute('class', 'fa-solid fa-sun');
+sunIcon.setAttribute('aria-hidden', 'true');
+label.appendChild(sunIcon);
+
+const ball = document.createElement('div');
+ball.setAttribute('class', 'ball');
+label.appendChild(ball);
 
 // Toggle Text
 const toggleText = document.createElement('span');
@@ -23,7 +39,7 @@ toggle.appendChild(toggleText);
 // Navigation bar
 const navBar = document.createElement('nav');
 navBar.setAttribute('id', 'nav');
-document.body.append(navBar);
+themeContainer.appendChild(navBar);
 
 // Anchor tags
 const home = document.createElement('a');
@@ -130,7 +146,7 @@ projectSection.setAttribute('id', 'projects');
 document.body.append(projectSection);
 
 // Projects H1
-const projectH1 = document.createElement('h1');
+const projectH1 = document.createElement('h2');
 projectH1.innerHTML = `Buttons`;
 projectSection.appendChild(projectH1);
 
