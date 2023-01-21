@@ -91,53 +91,42 @@ const aboutDiv = document.createElement('div');
 aboutDiv.setAttribute('class', 'about__container');
 aboutSection.appendChild(aboutDiv);
 
-// create image div
-const imageDiv = document.createElement('div');
-imageDiv.setAttribute('class', 'image__container');
-aboutDiv.appendChild(imageDiv);
+// create image1Div
+const image1Div = document.createElement('div');
+image1Div.setAttribute('class', 'image__container');
+aboutDiv.appendChild(image1Div);
 
 // Add h2 
-const imageDivHeader = document.createElement('h2');
-imageDivHeader.innerHTML = `Web Innovation`;
-imageDiv.appendChild(imageDivHeader);
+const image1Header = document.createElement('h2');
+image1Header.innerHTML = `Web Innovation`;
+image1Div.appendChild(image1Header);
 
 // Insert  image1
 const image1 = document.createElement('img');
-image1.setAttribute('src', '/myProject/assets/undraw_proud_coder_light.svg');
+image1.setAttribute('src', '/myProject/assets/undraw_proud_coder_re_light.svg');
 image1.setAttribute('width', '300px');
-imageDiv.appendChild(image1);
+image1.setAttribute('height', '300px');
+image1Div.appendChild(image1);
 
-// create image2 div
+// Image2Div
 const image2Div = document.createElement('div');
 image2Div.setAttribute('class', 'image__container');
 aboutDiv.appendChild(image2Div);
 
-// Add h2 
-const image2DivHeader = document.createElement('h2');
-image2DivHeader.innerHTML = `Building Websites`;
-imageDiv.appendChild(image2DivHeader);
+// Add h2
+const image2Header = document.createElement('h2');
+image2Header.innerHTML = `Building Websites`;
+image2Div.appendChild(image2Header);
 
-// Insert  image2
+// Image2
 const image2 = document.createElement('img');
-image2.setAttribute('src', '/myProject/assets/undraw_building_websites_light.svg');
+image2.setAttribute('src', 'yProject/assets/undraw_building_websites_light.svg');
 image2.setAttribute('width', '300px');
-imageDiv.appendChild(image2);
+image2.setAttribute('height', '300px');
+image2Div .appendChild(image2)
 
-// create image3 div
-const image3Div = document.createElement('div');
-image3Div.setAttribute('class', 'image__container');
-aboutDiv.appendChild(image3Div);
 
-// Add h2 
-const image3DivHeader = document.createElement('h2');
-image3DivHeader.innerHTML = `Web devices`;
-imageDiv.appendChild(image3DivHeader);
 
-// Insert  image3
-const image3 = document.createElement('img');
-image3.setAttribute('src', '/myProject/assets/undraw_web_devices_light.svg');
-image3.setAttribute('width', '300px');
-imageDiv.appendChild(image3);
 
 
 // Projects Section
