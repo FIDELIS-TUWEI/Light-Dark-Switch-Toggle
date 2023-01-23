@@ -13,15 +13,25 @@ html {
 body {
     font-family: 'Ubuntu', sans-serif;
     transition: background 0.2s linear;
+    color: #111;
+    background-color: #fff;
 } 
 /* For light mode */ 
-/* body.dark {
+body.dark {
     background: #38E47C;
 }
 
 body.dark p, i, h1, h2, button {
     color: #fff;
-} */
+}
+
+body.light {
+    background-color: #fff;
+}
+
+body.light p, i, h1, h2, button {
+    color: #111;
+}
 
 .theme_switch_container {
     display: flex;
@@ -118,15 +128,25 @@ a:focus {
 
 .about__container {
     border: 2px solid blue;
-    width: 100%;
-    margin: auto;
-    padding: 10px 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
+    
+}
+
+@media screen and (max-width: 900px) {
+    .about__container {
+        width: 100%;
+        margin: auto;
+        padding: 10px 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+    }
 }
 
 .image__container {
     border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 

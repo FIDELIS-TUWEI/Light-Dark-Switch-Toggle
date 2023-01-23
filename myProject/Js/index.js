@@ -5,4 +5,6 @@ const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change', () => {
 // Change theme
     document.body.classList.toggle('dark');
+    document.body.classList.toggle('light');
+
 });
